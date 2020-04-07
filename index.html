@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 
   <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <meta name="description" content="Description">
     <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
+    <link rel="stylesheet" href="vue.css">
   </head>
 
   <body>
@@ -32,35 +32,27 @@
           crossChapter: true,
           crossChapterText: true,
         },
-        search: 'auto',
         search: {
-          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-          paths: [], // or 'auto'
-          placeholder: 'Type to search',
-
-          // 支持本地化
-          placeholder: {
-            '/zh-cn/': '搜索',
-            '/': 'Type to search'
-          },
-
-          noData: 'No Results!',
-
-          // 支持本地化
+          maxAge: 3000,
           noData: {
-            '/zh-cn/': '找不到结果',
-            '/': 'No Results'
+            '/de-de/': 'Keine Ergebnisse!',
+            '/zh-cn/': '没有结果!',
+            '/': 'No results!'
           },
-
-          // 搜索标题的最大层级, 1 - 6
-          depth: 6,
-        }
+          paths: 'auto',
+          placeholder: {
+            '/de-de/': 'Suche',
+            '/zh-cn/': '搜索',
+            '/': 'Search'
+          }
+        },
+    
       }
 
     </script>
-    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="docsify-pagination.js"></script>
+    <script src="search.js"></script>
+    <script src="docsify.js"></script>
   </body>
 
 </html>
