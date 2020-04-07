@@ -1,2 +1,5 @@
-# mynote
-It's my note to learn code.
+# 1
+
+## 2
+
+### 3
