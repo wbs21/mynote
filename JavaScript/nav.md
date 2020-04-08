@@ -7,6 +7,6 @@
     * [if 判断](/JavaScript/base/06if)
     * [for while循环](/JavaScript/base/07for_while)
     * [map 和 set](/JavaScript/base/08Map_Set)
-    * [inheritance](/JavaScript/base/09iterable)
+    * [iterable](/JavaScript/base/09iterable)
     * [对象继承](/JavaScript/base/Inheritance)
 * [首页](home)
